@@ -92,7 +92,10 @@ hr {
 .courses {
     display: flex;
     gap: 11%;
+
 }
+
+
 
 .course .course-banner img {
     width: 224px;
@@ -121,4 +124,93 @@ hr {
 
 .course-detail p {
     color: red;
+}
+
+/* Media-Quaris */
+/* for mobile device */
+@media screen and (max-width:688px) {
+
+    /* top-player */
+    .container {
+        width: 100%;
+
+    }
+
+    .top-player {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .player-title {
+        font-size: 43px;
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .player img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .player-name {
+        font-size: 40px;
+    }
+
+    /* top-blogs */
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .thembel {
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0px;
+    }
+
+    .thembel img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .thembel-text {
+        font-size: 23px;
+        margin-top: 10px;
+    }
+
+    /* Letest Course */
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 120px;
+
+    }
+
+    .course {
+        flex-direction: column;
+        margin-left: 13%;
+    }
+
+    .course .course-banner img {
+        width: 450px;
+        height: 300px;
+    }
+
+    .course-detail {
+        font-size: 30px;
+    }
+
+    .fa-star.filled {
+        font-size: 25px;
+    }
+
+    .clock {
+        font-size: 22px;
+    }
+
+
 }
